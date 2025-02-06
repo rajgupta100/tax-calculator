@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income Tax Calculator</h1>
+        
+        <form id="taxForm">
+            <label for="age">Age (years):</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="income">Annual Income (₹):</label>
+            <input type="number" id="income" name="income" required>
+
+            <h2>Deductions</h2>
+            <label for="epf">EPF Contribution (₹):</label>
+            <input type="number" id="epf" name="epf">
+
+            <label for="lifeInsurance">Life Insurance Premiums (₹):</label>
+            <input type="number" id="lifeInsurance" name="lifeInsurance">
+
+            <label for="hra">House Rent Allowance (HRA) (₹):</label>
+            <input type="number" id="hra" name="hra">
+
+            <label for="nsc">National Savings Certificate (₹):</label>
+            <input type="number" id="nsc" name="nsc">
+
+            <label for="ppf">Public Provident Fund (₹):</label>
+            <input type="number" id="ppf" name="ppf">
+
+            <label for="studentLoan">Student Loan Interest (₹):</label>
+            <input type="number" id="studentLoan" name="studentLoan">
+
+            <label for="tuitionFee">Tuition Fee (₹):</label>
+            <input type="number" id="tuitionFee" name="tuitionFee">
+
+            <label for="charitable">Charitable Donations (₹):</label>
+            <input type="number" id="charitable" name="charitable">
+
+            <label for="fixedDeposit">Fixed Deposit (₹):</label>
+            <input type="number" id="fixedDeposit" name="fixedDeposit">
+
+            <label for="sukanya">Sukanya Samriddhi Scheme (₹):</label>
+            <input type="number" id="sukanya" name="sukanya">
+
+            <label for="conveyance">Conveyance Allowance (₹):</label>
+            <input type="number" id="conveyance" name="conveyance">
+
+            <label for="lta">Leave Travel Allowance (₹):</label>
+            <input type="number" id="lta" name="lta">
+
+            <label for="loanInterest">Loan Interest (₹):</label>
+            <input type="number" id="loanInterest" name="loanInterest">
+
+            <label for="nps">National Pension Scheme (₹):</label>
+            <input type="number" id="nps" name="nps">
+
+            <label for="homeLoanPrincipal">Principal Repayment of Home Loans (₹):</label>
+            <input type="number" id="homeLoanPrincipal" name="homeLoanPrincipal">
+
+            <label for="section80d">Medical Insurance (Section 80D) (₹):</label>
+            <input type="number" id="section80d" name="section80d">
+
+            <label for="standardDeduction">Standard Deduction (₹):</label>
+            <input type="number" id="standardDeduction" name="standardDeduction">
+
+            <label for="books">Books (₹):</label>
+            <input type="number" id="books" name="books">
+
+            <label for="educationAllowance">Education Allowance (₹):</label>
+            <input type="number" id="educationAllowance" name="educationAllowance">
+
+            <label for="elss">Equity Linked Saving Scheme (ELSS) (₹):</label>
+            <input type="number" id="elss" name="elss">
+
+            <label for="insurance">Insurance (₹):</label>
+            <input type="number" id="insurance" name="insurance">
+
+            <label for="reimbursements">Reimbursements (₹):</label>
+            <input type="number" id="reimbursements" name="reimbursements">
+
+            <label for="section80ttb">Interest Income (Section 80TTB) (₹):</label>
+            <input type="number" id="section80ttb" name="section80ttb">
+
+            <label for="ulip">ULIP (₹):</label>
+            <input type="number" id="ulip" name="ulip">
+
+            <button type="button" onclick="calculateTax()">Calculate</button>
+        </form>
+
+
+        <!-- <table>
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>$100</td>
+            </tr>
+          </table> -->
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
